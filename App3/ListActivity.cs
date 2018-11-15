@@ -107,7 +107,7 @@ namespace App3
             //}
 
             //dataList = data;
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 7; i++)
             {
 
                 ListItem obj = new ListItem();
@@ -239,8 +239,13 @@ namespace App3
         /// </summary>
         public static string[] Names = new string[]
         {
-    "Afghanistan",
-    "Albania",
+    "Australia",
+    "Brazil",
+    "Canada",
+    "India",
+    "Japan",
+    "Kenya",
+    "Zimbabwe",
     "Algeria",
     "American Samoa",
     "Andorra",

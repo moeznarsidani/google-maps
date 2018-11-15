@@ -10,7 +10,7 @@ namespace App3
         {
             public async Task<Location> GeocodeLocation(string address)
             {
-                //Set default values
+               
                 var location = new Location { Latitude = 0, Longitude = 0 };
 
                 try
@@ -24,17 +24,16 @@ namespace App3
                         var xmlDoc = new XmlDocument();
                         xmlDoc.LoadXml(content);
 
-                        //We have data!
+               
                         location.Latitude = double.Parse(xmlDoc.SelectSingleNode("//geometry/location/lat").InnerText, NumberFormatInfo.InvariantInfo);
                         location.Longitude = double.Parse(xmlDoc.SelectSingleNode("//geometry/location/lng").InnerText, NumberFormatInfo.InvariantInfo);
 
-                        //Let's return that data
-                        return location;
+                                       return location;
                     }
                 }
                 catch (Exception)
                 {
-                    //Return default values
+               
                     return location;
                 }
             }
